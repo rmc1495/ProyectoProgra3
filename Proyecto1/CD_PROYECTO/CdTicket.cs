@@ -94,7 +94,6 @@ namespace CD_PROYECTO
 
         public void ModifyTickete(CdTicket mdfTickete)
         {
-
             MyConnection myConnection = new MyConnection();
             SqlConnection conexion = myConnection.CreateConnection();
             SqlCommand comando = myConnection.CreateCommand(conexion);
