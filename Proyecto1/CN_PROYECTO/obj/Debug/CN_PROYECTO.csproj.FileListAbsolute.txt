@@ -1,0 +1,14 @@
+F:\Proyecto1\CN_PROYECTO\bin\Debug\CN_PROYECTO.dll
+F:\Proyecto1\CN_PROYECTO\bin\Debug\CN_PROYECTO.pdb
+F:\Proyecto1\CN_PROYECTO\bin\Debug\CD_PROYECTO.dll
+F:\Proyecto1\CN_PROYECTO\bin\Debug\CD_PROYECTO.pdb
+F:\Proyecto1\CN_PROYECTO\obj\Debug\CN_PROYECTO.csprojResolveAssemblyReference.cache
+F:\Proyecto1\CN_PROYECTO\obj\Debug\CN_PROYECTO.dll
+F:\Proyecto1\CN_PROYECTO\obj\Debug\CN_PROYECTO.pdb
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\bin\Debug\CN_PROYECTO.dll
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\bin\Debug\CN_PROYECTO.pdb
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\bin\Debug\CD_PROYECTO.dll
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\bin\Debug\CD_PROYECTO.pdb
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\obj\Debug\CN_PROYECTO.csprojResolveAssemblyReference.cache
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\obj\Debug\CN_PROYECTO.dll
+C:\Users\Jenn\Desktop\Proyecto progra 3\Proyecto1\CN_PROYECTO\obj\Debug\CN_PROYECTO.pdb

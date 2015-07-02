@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D58CF893-A305-489A-B803-65E67A438AFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proyecto1</RootNamespace>
+    <AssemblyName>Proyecto1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SearchClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClient.Designer.cs">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchFlights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchFlights.Designer.cs">
+      <DependentUpon>searchFlights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flights.Designer.cs">
+      <DependentUpon>flights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchTicket.Designer.cs">
+      <DependentUpon>searchTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tickets.Designer.cs">
+      <DependentUpon>tickets.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchClient.resx">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchFlights.resx">
+      <DependentUpon>searchFlights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flights.resx">
+      <DependentUpon>flights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchTicket.resx">
+      <DependentUpon>searchTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tickets.resx">
+      <DependentUpon>tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemas-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemaBOTONES_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemaBOTONES_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemaBOTONES_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemaBOTONES_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemaBOTONES_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemas-boton-ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemas-register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemas-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemas-tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto-sitemas-flights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOTONES_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOTONES_011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOTONES_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MODIFY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdsdc_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CD_PROYECTO\CD_PROYECTO.csproj">
+      <Project>{95889a27-9d5c-4155-969b-d93576c26e1f}</Project>
+      <Name>CD_PROYECTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CN_PROYECTO\CN_PROYECTO.csproj">
+      <Project>{93d3c5d0-5ef3-4f52-88d1-c4ea7c7a25ee}</Project>
+      <Name>CN_PROYECTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
