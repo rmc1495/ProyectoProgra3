@@ -98,8 +98,6 @@ namespace CD_PROYECTO
             SqlConnection conexion = myConnection.CreateConnection();
             SqlCommand comando = myConnection.CreateCommand(conexion);
             SqlDataReader tq;
-
-
             comando.CommandText = "sp_UpdateTicket";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@pId", mdfTickete.IdTicket);
