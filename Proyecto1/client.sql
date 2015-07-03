@@ -1,7 +1,27 @@
-CREATE DATABASE Flights
+USE MASTER;
+GO
 
-USE Flights
+/**********************************************************************/
+---------VALIDACION PARA DETERMINAR SI EXISTE UNA BASE DE DATOS--------
+/**********************************************************************/
+GO
+IF EXISTS(SELECT * FROM sys.databases WHERE name = 'DB_FLIGHTS')
+BEGIN
+	DROP DATABASE DB_FLIGHTS;
+END
 
+/***********************************************************************/
+------------------------------CREA BASE DE DATOS------------------------
+/***********************************************************************/
+GO
+CREATE DATABASE DB_FLIGHTS;
+
+
+/***********************************************************************/
+----------------------------------CREA TABLAS---------------------------
+/***********************************************************************/
+GO
+USE DB_FLIGHTS;
 CREATE TABLE Client(
         id varchar(50) NOT NULL ,
         name varchar(50) NOT NULL,
@@ -59,8 +79,8 @@ CREATE PROCEDURE sp_listClients
 
 	AS
 	BEGIN
-	SELECT id AS Identificacion, name AS Nombre, lastname AS Apellido,
-		   email AS eMail, phone AS Telefono, clientState AS Estado_Civil, clientType AS Tipo_de_Cliente	
+	SELECT id AS ID, name AS NAME, lastname AS LASTNAME,
+		   email AS eMail, phone AS PHONE, clientState AS MARITAL_STATUS, clientType AS CUSTOMER_TYPE	
 	FROM Client;
 END
 
@@ -77,5 +97,4 @@ END
 
 
  
-
-select * from Client
+--select * from Client
